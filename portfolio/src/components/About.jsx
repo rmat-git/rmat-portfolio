@@ -38,7 +38,7 @@ export default function About() {
     <section className="about" id="about">
       <div className="about__left">
         <p className="about__bio">
-          A Computer Engineering Graduating Student with background on graphic design
+          A Graduating Computer Engineering Student with background on graphic design
           {" "}I enjoy designing and use Front-End Development as my outlet.
           With little experience in the field, I seek guidance and mentorship to grow as a developer and designer.
         </p>
