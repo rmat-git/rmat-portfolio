@@ -51,9 +51,8 @@ a { color: inherit; text-decoration: none; }
 /* ── Shared section label ───────────────────────────────── */
 .section-label {
   font-family: var(--font-body);
-  font-size: 114px;
+  font-size: clamp(48px, 7vw, 114px);
   font-weight: 700;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--black);
   margin-bottom: 24px;
