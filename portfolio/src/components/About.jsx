@@ -1,25 +1,32 @@
 import { 
   SiReact, SiTailwindcss, SiCplusplus, SiFastapi, SiTensorflow, 
-  SiOpencv, SiMysql, SiDocker, SiFlask, SiN8N, SiGit 
+  SiOpencv, SiMysql, SiDocker, SiFlask, SiN8N, SiGit,
+  SiVite, SiPython, SiElectron
 } from "react-icons/si";
 import { DiPhotoshop } from "react-icons/di";
+import { FaNodeJs, FaCss3Alt } from "react-icons/fa";
 
 const techByCategory = {
   frontend: [
     { name: "React", icon: SiReact },
     { name: "Tailwind", icon: SiTailwindcss },
+    { name: "Vite", icon: SiVite },
+    { name: "Electron", icon: SiElectron },
+    { name: "CSS Modules", icon: FaCss3Alt },
   ],
   backend: [
     { name: "FastAPI", icon: SiFastapi },
     { name: "Flask", icon: SiFlask },
     { name: "MySQL", icon: SiMysql },
     { name: "Docker", icon: SiDocker },
+    { name: "Node.js", icon: FaNodeJs },
   ],
   ml: [
     { name: "TensorFlow", icon: SiTensorflow },
     { name: "OpenCV", icon: SiOpencv },
   ],
   tools: [
+    { name: "Python", icon: SiPython },
     { name: "C++", icon: SiCplusplus },
     { name: "N8N", icon: SiN8N },
     { name: "Photoshop", icon: DiPhotoshop },
