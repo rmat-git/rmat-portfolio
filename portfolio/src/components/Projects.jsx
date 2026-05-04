@@ -1,10 +1,12 @@
 import { useState } from "react";
-import { SiReact, SiTailwindcss, SiVite, SiFigma, SiJavascript, SiElectron } from "react-icons/si";
+import { SiReact, SiTailwindcss, SiVite, SiFigma, SiJavascript, SiElectron, SiFlask } from "react-icons/si";
 import { FaCss3Alt, FaPython, FaSpotify } from "react-icons/fa";
 import talksign from "../assets/projects/talksign.png";
 import deskpod from "../assets/projects/deskpod.png";
+import sentimentai from "../assets/projects/sentimentai.png";
 import TalkSignModal from "./Projects/TalkSignModal";
 import DeskPodModal from "./Projects/DeskPodModal";
+import SentimentAIModal from "./Projects/SentimentAIModal";
 
 const TOOL_ICONS = {
   React:      SiReact,
@@ -15,7 +17,8 @@ const TOOL_ICONS = {
   CSS:        FaCss3Alt,
   Python:     FaPython,
   Spotify:    FaSpotify,
-  Electron:   SiElectron
+  Electron:   SiElectron,
+  Flask:      SiFlask,       // ← added
 };
 
 const projects = [
@@ -34,6 +37,15 @@ const projects = [
     title: "DeskPod",
     tools: ["React", "Electron", "Spotify"],
     image: deskpod,
+    variant: "mid",
+    hasModal: true,
+  },
+  {
+    id: "sentimentai",          // ← new entry
+    number: "03",
+    title: "SentimentAI",
+    tools: ["Python", "Flask", "CSS"],
+    image: sentimentai,
     variant: "light",
     hasModal: true,
   },
@@ -92,6 +104,9 @@ export default function Projects() {
       )}
       {activeModal === "deskpod" && (
         <DeskPodModal onClose={() => setActiveModal(null)} />
+      )}
+      {activeModal === "sentimentai" && (
+        <SentimentAIModal onClose={() => setActiveModal(null)} />
       )}
     </>
   );

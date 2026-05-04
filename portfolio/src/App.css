@@ -127,7 +127,6 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--font-body);
   display: flex;
   justify-content: space-between;
-  /* width: 30%; */
   padding-top: 10px;
   font-size: 12px;
   font-weight: 700;
@@ -372,7 +371,9 @@ a { color: inherit; text-decoration: none; }
   min-height: 400px;
 }
 
+/* ── card variants ── */
 .projects__card--dark  { background-color: var(--card-dark);  min-height: 400px; }
+.projects__card--mid   { background-color: var(--card-mid);   min-height: 400px; } /* ← added */
 .projects__card--light { background-color: var(--card-light); min-height: 400px; }
 
 /* Project image hidden by default, clips to bottom */
@@ -557,6 +558,7 @@ a { color: inherit; text-decoration: none; }
   .about__tech-grid { grid-template-columns: 1fr; }
   .projects__grid { grid-template-columns: 1fr; }
   .projects__card--dark,
+  .projects__card--mid,                /* ← added */
   .projects__card--light { min-height: 300px; }
 }
 
