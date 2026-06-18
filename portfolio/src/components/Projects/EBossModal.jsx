@@ -35,7 +35,7 @@ export default function EBOSSModal({ onClose }) {
         <div className="modal__image-wrap">
           <img src={eboss} alt="eBOSS" className="modal__image" />
           <div className="modal__image-overlay" />
-          <div className="modal__image-badge">03</div>
+          <div className="modal__image-badge">04</div>
         </div>
 
         <div className="modal__body">

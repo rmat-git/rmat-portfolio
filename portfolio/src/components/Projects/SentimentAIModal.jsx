@@ -38,7 +38,7 @@ export default function SentimentAIModal({ onClose }) {
         <div className="modal__image-wrap">
           <img src={sentimentai} alt="SentimentAI" className="modal__image" />
           <div className="modal__image-overlay" />
-          <div className="modal__image-badge">03</div>
+          <div className="modal__image-badge">05</div>
         </div>
 
         <div className="modal__body">

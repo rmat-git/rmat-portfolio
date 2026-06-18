@@ -38,7 +38,7 @@ export default function TalkSignModal({ onClose }) {
         <div className="modal__image-wrap">
           <img src={talksign} alt="TalkSign" className="modal__image" />
           <div className="modal__image-overlay" />
-          <div className="modal__image-badge">01</div>
+          <div className="modal__image-badge">03</div>
         </div>
 
         <div className="modal__body">

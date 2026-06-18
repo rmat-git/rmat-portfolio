@@ -18,7 +18,6 @@ export default function Hero() {
         <hr className="hero__rule" />
         <div className="hero__meta-labels">
           <span>COMPUTER ENGINEERING STUDENT </span>
-          <span>ASPIRING FRONT-END DEVELOPER</span>
         </div>
       </div>
 
