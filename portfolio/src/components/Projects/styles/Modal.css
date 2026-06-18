@@ -102,6 +102,27 @@
   letter-spacing: -0.03em;
 }
 
+.modal__view-project {
+  position: absolute;
+  bottom: 16px;
+  right: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.modal__view-project:hover {
+  opacity: 0.9;
+  border-bottom: 1px solid var(--white);
+}
+
 /* Body */
 .modal__body {
   padding: 28px 32px 36px;

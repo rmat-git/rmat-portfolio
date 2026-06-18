@@ -1,7 +1,7 @@
 import { 
   SiReact, SiTailwindcss, SiCplusplus, SiFastapi, SiTensorflow, 
   SiOpencv, SiMysql, SiDocker, SiFlask, SiN8N, SiGit,
-  SiVite, SiPython, SiElectron, SiHtml5
+  SiVite, SiPython, SiElectron, SiHtml5, SiLaravel, SiPhp, SiReactrouter
 } from "react-icons/si";
 import { FaCss3Alt, FaNodeJs } from "react-icons/fa";
 import { DiPhotoshop } from "react-icons/di";
@@ -14,6 +14,7 @@ const techByCategory = {
     { name: "Tailwind", icon: SiTailwindcss },
     { name: "Vite", icon: SiVite },
     { name: "Electron", icon: SiElectron },
+    { name: "React Router", icon: SiReactrouter },
   ],
   backend: [
     { name: "FastAPI", icon: SiFastapi },
@@ -21,6 +22,8 @@ const techByCategory = {
     { name: "MySQL", icon: SiMysql },
     { name: "Docker", icon: SiDocker },
     { name: "Node.js", icon: FaNodeJs },
+    { name: "Laravel", icon: SiLaravel },
+    { name: "PHP", icon: SiPhp },
   ],
   ml: [
     { name: "TensorFlow", icon: SiTensorflow },
@@ -36,7 +39,7 @@ const techByCategory = {
 };
 
 const experience = [
-  { company: "Bacolod Governement Center — MITCS", start: "04/2026", end: "now" },
+  { company: "Bacolod Governement Center — MITCS", start: "04/2026", end: "06/2026" },
   { company: "Globe Telecom — Network Department", start: "08/2024", end: "08/2024" },
   { company: "TUP Visayas — UITC", start: "07/2023", end: "08/2023" },
 ];

@@ -1,20 +1,18 @@
 import { useEffect } from "react";
 import { IoClose } from "react-icons/io5";
-import { SiElectron, SiReact, SiSpotify, SiVite } from "react-icons/si";
-import { FaCss3Alt, FaNodeJs } from "react-icons/fa";
-import deskpod from "../../assets/projects/deskpod.png";
+import { SiReact, SiReactrouter, SiJavascript } from "react-icons/si";
+import { FaCss3Alt } from "react-icons/fa";
+import eboss from "../../assets/projects/eboss.png";
 import "./styles/Modal.css";
 
 const techStack = [
-  { icon: SiElectron, label: "Electron"   },
-  { icon: SiReact,    label: "React"      },
-  { icon: FaNodeJs,   label: "Node.js"    },
-  { icon: FaCss3Alt,  label: "CSS Modules"},
-  { icon: SiSpotify,  label: "Spotify API"},
-  { icon: SiVite,     label: "Vite"       },
+  { icon: SiJavascript, label: "JavaScript" },
+  { icon: FaCss3Alt,           label: "CSS3"       },
+  { icon: SiReact,          label: "React"      },
+  { icon: SiReactrouter,    label: "React Router" },
 ];
 
-export default function DeskPodModal({ onClose }) {
+export default function EBOSSModal({ onClose }) {
   useEffect(() => {
     const handler = (e) => { if (e.key === "Escape") onClose(); };
     window.addEventListener("keydown", handler);
@@ -35,40 +33,40 @@ export default function DeskPodModal({ onClose }) {
         </button>
 
         <div className="modal__image-wrap">
-          <img src={deskpod} alt="DeskPod" className="modal__image" />
+          <img src={eboss} alt="eBOSS" className="modal__image" />
           <div className="modal__image-overlay" />
-          <div className="modal__image-badge">01</div>
+          <div className="modal__image-badge">03</div>
         </div>
 
         <div className="modal__body">
           <div className="modal__header">
-            <h2 className="modal__title">DeskPod</h2>
-            <span className="modal__status">Personal Project — In Progress</span>
+            <h2 className="modal__title">eBOSS</h2>
+            <span className="modal__status">Internship - To be Deployed</span>
           </div>
 
-          <p className="modal__description">
-            A desktop Spotify controller that emulates a 5th-generation iPod Classic —
-            complete with a functional click wheel, LCD display, and system tray
-            integration. Built with Electron and React, it sits always-on-top as a
-            frameless overlay, letting you control playback without leaving your workflow.
+        <p className="modal__description">
+            Landing page for eBOSS (e-Business One Stop Shop) — a guide for business
+            owners navigating the registration and renewal of their business permits.
+            Built to digitize the process, reduce friction, and make applications
+            faster and easier for the people of Bacolod City.
           </p>
-
+ 
           <div className="modal__stats">
             <div className="modal__stat">
-              <span className="modal__stat-value">iPod</span>
-              <span className="modal__stat-label">UI Concept</span>
+              <span className="modal__stat-value">LGU</span>
+              <span className="modal__stat-label">Bacolod City</span>
             </div>
             <div className="modal__stat">
-              <span className="modal__stat-value">OAuth</span>
-              <span className="modal__stat-label">Spotify Auth</span>
+              <span className="modal__stat-value">2-in-1</span>
+              <span className="modal__stat-label">New & Renewal</span>
             </div>
             <div className="modal__stat">
-              <span className="modal__stat-value">IPC</span>
-              <span className="modal__stat-label">Secure Bridge</span>
+              <span className="modal__stat-value">React</span>
+              <span className="modal__stat-label">Frontend</span>
             </div>
             <div className="modal__stat">
-              <span className="modal__stat-value">F/P</span>
-              <span className="modal__stat-label">Free + Premium</span>
+              <span className="modal__stat-value">Permit</span>
+              <span className="modal__stat-label">Digitized</span>
             </div>
           </div>
 

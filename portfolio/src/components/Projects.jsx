@@ -1,12 +1,17 @@
 import { useState } from "react";
-import { SiReact, SiTailwindcss, SiVite, SiFigma, SiJavascript, SiElectron, SiFlask } from "react-icons/si";
+import { SiReact, SiTailwindcss, SiVite, SiFigma, SiJavascript, SiElectron, SiFlask, SiReactrouter, SiLaravel, SiPhp} from "react-icons/si";
 import { FaCss3Alt, FaPython, FaSpotify } from "react-icons/fa";
 import talksign from "../assets/projects/talksign.png";
 import deskpod from "../assets/projects/deskpod.png";
 import sentimentai from "../assets/projects/sentimentai.png";
+import eboss from "../assets/projects/eboss.png";
+import bcho from "../assets/projects/bcho.png";
 import TalkSignModal from "./Projects/TalkSignModal";
 import DeskPodModal from "./Projects/DeskPodModal";
 import SentimentAIModal from "./Projects/SentimentAIModal";
+import EBossModal from "./Projects/EBossModal";
+import BCHOModal from "./Projects/BCHOModal";                                 
+
 
 const TOOL_ICONS = {
   React:      SiReact,
@@ -18,35 +23,56 @@ const TOOL_ICONS = {
   Python:     FaPython,
   Spotify:    FaSpotify,
   Electron:   SiElectron,
-  Flask:      SiFlask,       // ← added
-};
+  Flask:      SiFlask,      
+  ReactRouter: SiReactrouter,
+  Laravel:    SiLaravel,
+  PHP:        SiPhp,
+};      
 
 const projects = [
   {
-    id: "talksign",
+    id: "deskpod",
     number: "01",
-    title: "TalkSign",
-    tools: ["React", "Tailwind", "Python"],
-    image: talksign,
+    title: "DeskPod",
+    tools: ["React", "Electron", "Spotify"],
+    image: deskpod,
     variant: "dark",
     hasModal: true,
   },
   {
-    id: "deskpod",
+    id: "bcho",
     number: "02",
-    title: "DeskPod",
-    tools: ["React", "Electron", "Spotify"],
-    image: deskpod,
+    title: "BCHO Appointment System",
+    tools: ["React", "Laravel", "PHP"],
+    image: bcho,
     variant: "mid",
     hasModal: true,
   },
   {
-    id: "sentimentai",          // ← new entry
+    id: "talksign",
     number: "03",
+    title: "TalkSign",
+    tools: ["React", "Tailwind", "Python"],
+    image: talksign,
+    variant: "light",
+    hasModal: true,
+  },
+  {
+    id: "eboss",
+    number: "04",
+    title: "eBOSS",
+    tools: ["React", "CSS", "ReactRouter"],
+    image: eboss,
+    variant: "dark",
+    hasModal: true,
+  },
+  {
+    id: "sentimentai",          // ← new entry
+    number: "05",
     title: "SentimentAI",
     tools: ["Python", "Flask", "CSS"],
     image: sentimentai,
-    variant: "light",
+    variant: "mid",
     hasModal: true,
   },
 ];
@@ -107,6 +133,14 @@ export default function Projects() {
       )}
       {activeModal === "sentimentai" && (
         <SentimentAIModal onClose={() => setActiveModal(null)} />
+      )}
+     {activeModal === "bcho" && (
+        <BCHOModal onClose={() => setActiveModal(null)} 
+          projectUrl="https://cityhealth.bacolodcity.gov.ph" 
+        />
+      )}
+      {activeModal === "eboss" && (
+        <EBossModal onClose={() => setActiveModal(null)} />
       )}
     </>
   );
