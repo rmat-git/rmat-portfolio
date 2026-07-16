@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <section className="contact" id="contact">
       <p className="contact__status">
-        Im Currently an <span className="contact__status--highlight">Open</span> for{" "}
+        Im Currently <span className="contact__status--highlight">Open</span> for{" "}
         <span className="contact__status--highlight">Jobs and Projects</span>
       </p>
       <p className="contact__tagline">Feel Free to Contact Me</p>

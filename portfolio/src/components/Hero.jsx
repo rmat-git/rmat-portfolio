@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="hero__meta-bar">
         <hr className="hero__rule" />
         <div className="hero__meta-labels">
-          <span>COMPUTER ENGINEERING STUDENT </span>
+          <span>COMPUTER ENGINEERING GRADUATE</span>
         </div>
       </div>
 
